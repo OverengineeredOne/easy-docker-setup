@@ -1,10 +1,10 @@
 #!/bin/bash 
-apt update
+apt-get update
 
 # tzdata is one the prerequisites, if it is not installed we want to install it silently.
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 
-apt install apt-transport-https ca-certificates curl software-properties-common -y
+apt-get install apt-transport-https ca-certificates curl software-properties-common -y
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 echo \
