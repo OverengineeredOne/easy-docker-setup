@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/bash 
 apt update
 
 # tzdata is one the prerequisites, if it is not installed we want to install it silently.
